@@ -1,20 +1,22 @@
 // ==UserScript==
 // @name         Google Highlight Visited Links
 // @version      1.0
-// @description	 Changes the color of visited links in Google to a yellowish orange.
+// @description	 Changes the color of visited links in google.com to a yellowish orange.
 // @icon         https://github.com/gersko/google-highlight-visited-links/raw/main/icon.png
 // @author       gersko
-// @include      *://*.google.tld/*
+// @match        *://*.google.com/*
 // @downloadURL  https://github.com/gersko/google-highlight-visited-links/raw/main/script.user.js
 // @updateURL    https://github.com/gersko/google-highlight-visited-links/raw/main/script.user.js
 // @grant        GM_addStyle
 // @run-at       document-start
 // ==/UserScript==
 
-const css = `
+(typeof GM_addStyle != "undefined" ? GM_addStyle : (styles) => {
+    let styleNode = document.createElement("style");
+    styleNode.innerText = styles;
+    document.head.appendChild(styleNode);
+})(`
 a:visited {
-    color: #fbaf5f !important;"
+    color: #fbaf5f !important;
 }
-`;
-
-GM_addStyle(css);
+`);
