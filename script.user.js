@@ -16,7 +16,8 @@
     styleNode.innerText = styles;
     document.head.appendChild(styleNode);
 })(`
-a:visited {
+a:visited,
+a:visited *[role=link] {
     color: #fbaf5f !important;
 }
 `);
