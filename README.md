@@ -1,6 +1,6 @@
 # Google Highlight Visited Links
 
-Userscript which changes the color of visited links in Google to a yellowish orange.
+Userscript which changes the color of visited links on google.com to a yellowish orange.
 
 ## Installation
 
