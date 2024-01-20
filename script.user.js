@@ -5,6 +5,8 @@
 // @icon         https://github.com/gersko/google-highlight-visited-links/raw/main/icon.png
 // @author       gersko
 // @include      *://*.google.tld/*
+// @downloadURL  https://github.com/gersko/google-highlight-visited-links/raw/main/script.user.js
+// @updateURL    https://github.com/gersko/google-highlight-visited-links/raw/main/script.user.js
 // @grant        GM_addStyle
 // @run-at       document-start
 // ==/UserScript==
